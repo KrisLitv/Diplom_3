@@ -9,6 +9,7 @@ from pages.password_recovery import RecoveryPage
 from pages.login_page import LoginPage
 
 
+
 class TestRecoveryPage:
 
     @allure.title('Переход на страницу восстановления пароля через кнопку "Восстановить пароль"')
@@ -42,6 +43,7 @@ class TestRecoveryPage:
         return password_field.get_attribute('value') == password
 
     def click_on_element(self, locator):
+
         WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable(locator)
         )

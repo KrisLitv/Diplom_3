@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 
-
 class HeaderPageLocators:
     CONSTRUCTOR_BTN = (By.XPATH, ".//p[contains(text(), 'Конструктор')]")
     ORDER_FEED_BTN = (By.XPATH, ".//p[contains(text(), 'Лента Заказов')]")
